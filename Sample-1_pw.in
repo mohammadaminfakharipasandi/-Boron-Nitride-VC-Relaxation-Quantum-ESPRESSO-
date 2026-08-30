@@ -1,0 +1,46 @@
+ &CONTROL
+   calculation     = 'vc-relax' 
+   outdir          = '/home/amin/Desktop/QE' 
+   wfcdir          = '/home/amin/Desktop/QE' 
+   pseudo_dir      = '/home/amin/Desktop/QE' 
+   prefix          = 'Sample-1' 
+   disk_io         = 'high' 
+   verbosity       = 'high' 
+   tstress         = .true. 
+   tprnfor         = .true. 
+ /
+ &SYSTEM
+   ibrav           = 6
+   A               = 2.63 
+   C               = 6.1 
+   nat             = 6
+   ntyp            = 2
+   ecutwfc         = 65 
+   ecutrho         = 260 
+   occupations     = 'smearing' 
+   degauss         = 0.02 
+   smearing        = 'gaussian' 
+ /
+ &ELECTRONS
+   electron_maxstep = 100
+   conv_thr        = 1.D-9 
+ /
+ &IONS
+ /
+ &CELL
+   cell_dynamics   = 'bfgs' 
+   cell_dofree     = 'y' 
+ /
+ATOMIC_SPECIES
+    B   10.81000  B.pz-n-kjpaw_psl.0.1.UPF 
+    N   14.00000  N.pz-n-rrkjus_psl.0.1.UPF
+ATOMIC_POSITIONS angstrom 
+    N      1.315000000    1.315000000    0.000000000    
+    B      1.315000000    0.000000000    0.857700000    
+    N      1.315000000    0.000000000    2.207700000    
+    N      0.000000000    1.315000000    3.907700000    
+    B      1.315000000    1.315000000    3.050000000    
+    B      0.000000000    1.315000000    5.257700000    
+K_POINTS automatic 
+  8 8 8   1 1 1 
+
