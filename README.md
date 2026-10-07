@@ -70,7 +70,7 @@ Mohammadamin Fakharipasandi, "Ionic + Variable-Cell Relaxation of a Boron Nitrid
 
 ## License
 
-This repository is licensed under a **Creative Commons Attribution 4.0 International License (CC BY 4.0)** — see [LICENSE](LICENSE) for the full text and attribution terms. Quantum ESPRESSO itself is separate, GPL-licensed software and is not redistributed here.
+This repository is fully open access just via citing.
 
 ## Notes
 
